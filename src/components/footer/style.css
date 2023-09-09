@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+footer {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.footer-visivel{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+#logo2{
+    width: 200px;
+    height: 150px;
+    background-color: transparent;
+}
+
+span{
+    color: white;    
+}
+
+#span1{
+    font-family: 'Kam Thmor Pro', sans-serif;
+}
+
+#span2{
+    padding-left: 20px;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-git{
+    background-image: linear-gradient(to top right,#000000 0%, #ffffff 50%, #000000 100%);
+    width: 28px;
+    margin-left: 10px;
+    border-radius: 60%;
+    transition: 2s;
+}
+
+#logo-git:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    .footer-navigation{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .footer-list{
+        margin:0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #logo2{
+        margin-top: -20px;
+        margin-bottom: 0.5px;
+        margin-left: 10px;
+    }
+
+    #span2 {
+        padding-bottom: 10px;
+    }
+}
