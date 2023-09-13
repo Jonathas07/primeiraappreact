@@ -1,5 +1,5 @@
 import React from "react"
-import './style.css'
+import './style-footer.css'
 import logo2 from '../../assets/logo.png'
 import logogit from '../../assets/logo_github.jpeg'
 import { Link, useNavigate } from "react-router-dom"
@@ -22,10 +22,8 @@ function Footer(){
                 <span id="span1">Todos os direitos reservados &copy;</span>
             </div>
             <div>
-                <span id="span2">Desenvolvido por: Jonathas Souza</span>
-                <Link to={'https://github.com/Jonathas07'}>
-                    <img src={logogit} title="GitHub" id="logo-git" />
-                </Link>           
+                <span id="span2">Desenvolvido por: <Link to={'https://github.com/Jonathas07'} target="blank" className="desenvolve" title="GitHub">Jonathas Souza</Link></span>
+                   
             </div>
         </footer>
     )

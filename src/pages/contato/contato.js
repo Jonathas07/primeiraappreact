@@ -1,5 +1,5 @@
 import React from "react"
-import './style.css'
+import './style-cont.css'
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 
@@ -8,17 +8,29 @@ function Contato(){
         <>
             <Header />
             <main>
-                <div>
-                    <span>Nome:</span>
-                    <input type="text" id="form1" />
+                <div className="centro">
+                    <span className="texto">Nome:</span>
+                    <input type="text" placeholder="Digite seu nome" />
 
-                    <span>E-mail:</span>
-                    <input type="text" id="form1" />
+                    <span className="texto">E-mail:</span>
+                    <input type="text" placeholder="Digite seu e-mail" />
 
-                    <span>Sua mensagem:</span>
-                    <textarea type="hipertext" id="form1" ></textarea>
+                    <span className="texto">Sua mensagem:</span>
+                    <textarea type="hipertext" placeholder="Digite sua mensagem" rows="10" cols="50"></textarea>
+                    <button className="button-comentario" onClick={() => alert('é apenas um front-end de teste! Muito Obrigado')}>Enviar</button>
                 </div>
             </main>
+            <div className="centro-cell">
+                <span className="texto">Nome:</span>
+                <input type="text" placeholder="Digite seu nome" />
+
+                <span className="texto">E-mail:</span>
+                <input type="text" placeholder="Digite seu e-mail" />
+
+                <span className="texto">Sua mensagem:</span>
+                <textarea type="hipertext" placeholder="Digite sua mensagem" rows="10" cols="50"></textarea>
+                <button className="button-comentario" onClick={() => alert('é apenas um front-end de teste! Muito Obrigado')}>Enviar</button>
+            </div>
             <Footer />
         </>
     )
