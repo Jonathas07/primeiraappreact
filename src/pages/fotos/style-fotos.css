@@ -1,5 +1,102 @@
+*{
+    margin: 0;padding: 0; list-style: none; text-decoration: none;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    width: 100%;
+    height: 560px;
+    padding-top:3%;
+    justify-content: space-around;
+}
+
+.foto{
+    width: 30%;
+    height: 40%;
+    border-radius: 25px;
+    background-size: cover;
+}
+
+.foto:hover{
+    transition: 2s;
+    transform: scale(1.05);
+}
+
+.f1{
+    background-image: url('https://streamingsbrasil.com/wp-content/uploads/2022/03/Elenco-de-The-Batman-Posteres-individuais.jpg');
+}
+
+.f2{
+    background-image: url('https://cinemaeafins.com.br/wp-content/uploads/2021/10/The-Batman-2022-elenco.jpg');
+}
+
+.f3{
+    background-image: url('https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/c3215195-a3c7-11ed-aa6e-9587410378a2/penguim.jpg');
+}
+
+.f4{
+    background-image: url('https://pbs.twimg.com/media/FMz8wWbUcAMmYjt?format=jpg');
+    background-position: 0 -32.5px;
+}
+
+.f5{
+    background-image: url('https://ik.imagekit.io/uwaknajbdrm/https:/img.vt.co/2022/03/2HTN03E-1024x753.jpg');
+}
+
+.f6{
+    background-image: url('https://cafeplus.com.br/wp-content/uploads/2022/03/batman-premiere-1024x683.jpg');
+    background-position: 0 -45px; 
+}
 
 
 @media (max-width: 700px) {
 
+    main{
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo{
+        width: 100%;
+        height: auto;
+        columns: 1 auto;
+        row-gap: 100px;
+    }
+
+    .foto{
+        width: 95%;
+        height: 900px;
+        background-position: 45% 50%;
+    }
+
+    .foto:hover{
+        transform: none;
+    }
+
+    .f1{
+        background-image: url('https://cinemaeafins.com.br/wp-content/uploads/2021/10/The-Batman-2022-elenco.jpg');
+    }
+
+    .f2{
+        background-image: url('https://criticalhits.com.br/wp-content/uploads/2022/03/zoe-kravitz-mulher-gato-6-910x450.jpg');
+    }
+
+    .f4{
+        background-image: url('https://cinepop.com.br/wp-content/uploads/2022/10/620503.jpg');
+    }
+
+    .f5{
+        background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg');
+    }
+
+    .f6{
+        background-image: url('https://i.ytimg.com/vi/uEySwcw7u5A/sddefault.jpg');
+    }
 }

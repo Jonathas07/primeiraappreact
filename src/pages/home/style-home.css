@@ -3,6 +3,9 @@
     background-color: black;
 }
 
+main{
+    flex-direction: column;
+}
 
 #banner{
     background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
@@ -76,7 +79,7 @@
     
     #banner{
         width: 100%;
-        height: 200px;
+        height: 300px;
         background-image: url('https://cdn.europosters.eu/image/hp/66923.jpg');
         background-position: 10%;
     }
